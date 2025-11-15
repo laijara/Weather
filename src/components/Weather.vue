@@ -51,7 +51,7 @@ export default {
   <div class="wrapper">
     <h1>Погода</h1>
     <p>Узнать погоду в {{ city == "" ? "вашем городе" : cityName }}</p>
-    <input type="text" v-model="city" placeholder="Введите город" />
+    <input type="text" v-model="city" placeholder="Введите город"  @keyup.enter="getWeather"/>
     <button v-if="city != ''" @click="getWeather()">Отправить</button>
     <button disabled v-else>Введите название города</button>
     <p class="error">{{ error }}</p>
