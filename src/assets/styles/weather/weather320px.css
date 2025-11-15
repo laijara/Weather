@@ -4,6 +4,8 @@
   }
 
   .wrapper {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     width: 300px;
     height:600px;
@@ -23,14 +25,16 @@
   }
 
   .wrapper input {
+    justify-content: center;
+    align-items: center;
     margin-top: 30px;
     background: transparent;
     border: 0;
-    border-bottom: 2px solid #110813;
     color: #fcfcfc;
     font-size: 14px;
     padding: 5px 8px;
     outline: none;
+    text-align: center;
   }
 
   .wrapper input:focus {
@@ -43,6 +47,8 @@
   }
 
   .wrapper button {
+    align-items: center;
+    justify-content: center;
     background: #e3bc4b;
     color: #fff;
     border-radius: 10px;

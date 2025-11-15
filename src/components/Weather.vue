@@ -1,7 +1,7 @@
 <script>
 import axios from "axios";
-import "../assets/styles/weather.css";
-import "../assets/styles/weather320px.css";
+import "../assets/styles/weather/weather.css";
+import "../assets/styles/weather/weather320px.css";
 
 export default {
   data() {
@@ -49,7 +49,7 @@ export default {
 
 <template>
   <div class="wrapper">
-    <h1>Погодное приложение</h1>
+    <h1>Погода</h1>
     <p>Узнать погоду в {{ city == "" ? "вашем городе" : cityName }}</p>
     <input type="text" v-model="city" placeholder="Введите город" />
     <button v-if="city != ''" @click="getWeather()">Получить погоду</button>
