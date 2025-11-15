@@ -52,7 +52,7 @@ export default {
     <h1>Погода</h1>
     <p>Узнать погоду в {{ city == "" ? "вашем городе" : cityName }}</p>
     <input type="text" v-model="city" placeholder="Введите город" />
-    <button v-if="city != ''" @click="getWeather()">Получить погоду</button>
+    <button v-if="city != ''" @click="getWeather()">Отправить</button>
     <button disabled v-else>Введите название города</button>
     <p class="error">{{ error }}</p>
 
